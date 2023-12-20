@@ -1,0 +1,306 @@
+p{
+    margin: 0px;
+}
+
+select.input{
+    background-color: none;
+    width: 260px;
+}
+
+.ChangeRole, .DeleteRole,
+.StudentsList, .Rasp{
+    background-color: #B20036;
+    color: #fff;
+    width: 400px;
+    height: 70px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    align-items: center;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+.ChangeRole:hover{
+    background-color: #131313;
+    transition: 0.3s;
+}
+
+.DeleteRole:hover{
+    background-color: #131313;
+    transition: 0.3s;
+}
+
+.StudentsList:hover{
+    background-color: #131313;
+    transition: 0.3s;
+}
+
+.Rasp:hover{
+    background-color: #131313;
+    transition: 0.3s;
+}
+
+.container{
+    max-width: 1180px;
+    padding: 0 10px ;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column{
+    margin-top: 150px;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
+}
+
+.column_left{
+    align-items: center;
+}
+
+.column_right{
+    align-items: center;
+}
+
+.DeleteRole{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.Rasp{
+    margin-top: 25px;
+}
+
+.panel {
+    color: #131313;
+    background-color: none;
+    display: none;
+    overflow: hidden;
+    max-width: 420px;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+
+.input{
+    width: 260px;
+    border: none;
+    text-decoration: underline;
+    font-size: 20px;
+    outline: none;
+    background-color: transparent;
+    padding: 0px 0px 15px 0px;
+}
+
+.input__class{
+    border: 2px solid #084cdf;
+    border-radius: 30px;
+    width: 390px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.accept{
+    width: 400px;
+    height: 70px;
+    background-color: #131313;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.accept__text{
+    max-width: 274px;
+    height: 28px;
+    color: #fff;
+    letter-spacing: 22px;
+    padding-left: 22px;
+    font-size: 22px;
+}
+
+.form__rasp{
+    max-width: 400px;
+    border-radius: 50px;
+}
+
+.input__file{
+    margin: 20px 0px 34px 0px;
+    font-size: 20px;
+}
+
+.accept__input__file{
+    width: 400px;
+    height: 70px;
+    background-color: #131313;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    letter-spacing: 22px;
+    font-size: 22px;
+}
+
+input[type=file]::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+
+@media (max-width: 900px){
+    select.input{
+        width: 224px;
+    }
+
+    .ChangeRole, .DeleteRole,
+    .StudentsList, .Rasp{
+        width: 100%;
+        height: 55px;
+    }
+
+    .column{
+        max-width: 300px;
+    }
+
+    .panel{
+        max-width: 300px;
+    }
+
+    .input__class{
+        width: 270px;
+    }
+
+    .input{
+        width: 220px;
+    }
+
+    .accept{
+        max-width: 100%;
+        height: 55px;
+    }
+
+    .accept__text{
+        letter-spacing: 16px;
+    }
+
+    .form__rasp{
+        max-width: 300px;
+    }
+
+    .input__file{
+        max-width: 100%;
+    }
+
+    .accept__input__file{
+        max-width: 100%;
+        height: 55px;
+        letter-spacing: 16px;
+    }
+}
+
+@media (max-width: 750px) {
+    select.input{
+        background-color: none;
+        width: 180px;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .column{
+        margin-top: 40px;
+    }
+
+    .ChangeRole{
+        margin-bottom: 15px;
+    }
+
+    .StudentsList{
+        margin-bottom: 15px;
+    }
+
+    .accept{
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
+
+    .input{
+        font-size: 16px;
+        padding-bottom: 5px;
+        width: 180px;
+    }
+
+    .input__class{
+        width: 230px;
+    }
+}
+
+@media (max-width: 450px){
+    span{
+        font-size: 16px;
+    }
+
+    option{
+        font-size: 16px;
+    }
+
+    .ChangeRole, .DeleteRole,
+    .StudentsList, .Rasp{
+        width: 100%;
+        height: 50px;
+    }
+
+    .column{
+        max-width: 260px;
+    }
+
+    .panel{
+        max-width: 260px;
+        font-size: 16px;
+    }
+
+    .accept{
+        max-width: 100%;
+        height: 50px;
+        margin-top: 35px;
+    }
+
+    .accept__text{
+        letter-spacing: 16px;
+        font-size: 16px;
+    }
+
+    .form__rasp{
+        max-width: 260px;
+    }
+
+    .input__file{
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    .input_id_user{
+        padding-bottom: 15px;
+    }
+
+    .accept__input__file{
+        max-width: 100%;
+        height: 55px;
+        letter-spacing: 14px;
+        font-size: 16px;
+        padding-left: 22px;
+    }
+}

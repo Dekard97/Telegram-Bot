@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Server</title>
+</head>
+<body>
+    <div class="container">
+        <div class="column">
+            <div class="column_left">
+            <button class="ChangeRole"><span>Изменить роль пользователя</span></button>
+            <form class="panel">
+                <div class="input__class">
+                <input class="input input_id_user" type="text" placeholder="ID пользователя">
+                <select class="input" name="option">
+                    <option value="" disabled selected>Выберите роль</option>
+                    <option value="1">Студент</option>
+                    <option value="2">Преподаватель</option>
+                    <option value="3">Админ</option>
+                  </select>
+                </div>
+                <button class="accept"><span class="accept__text">Изменить</span></button>
+            </form>
+            <button class="DeleteRole"><span>Забанить пользователя</span></button>
+            <form class="panel">
+                <div class="input__class">
+                <input class="input" type="text" placeholder="ID пользователя">
+                </div>
+                <button class="accept"><span class="accept__text">Забанить</span></button>
+            </form>
+            </div>
+        </div>
+        <div class="column">
+            <div class="column_right">
+            <button class="StudentsList"><span>Вывести список пользователь</span></button>
+            <button class="Rasp"><span>Обновить расписание</span></button>
+            <div class="panel">
+                <form class="form__rasp" enctype="multipart/form-data" method="post">
+                    <p>
+                    <input class="input__file" type="file" name="f">
+                    <input class="accept__input__file" type="submit" value="Отправить">
+                    </p>
+                </form> 
+            </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer"></footer>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
